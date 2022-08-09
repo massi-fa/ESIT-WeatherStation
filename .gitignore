@@ -39,3 +39,7 @@
 .pio/build/esp32dev/idedata.json
 .vscode/c_cpp_properties.json
 .pio/build/esp32dev/idedata.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+.pio/build/project.checksum
+.pio/build/esp32dev/idedata.json
