@@ -10,6 +10,8 @@
             "includePath": [
                 "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/include",
                 "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/src",
+                "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/.pio/libdeps/esp32dev/DHT sensor library",
+                "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/.pio/libdeps/esp32dev/Adafruit Unified Sensor",
                 "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -224,6 +226,8 @@
                 "path": [
                     "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/include",
                     "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/src",
+                    "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/.pio/libdeps/esp32dev/DHT sensor library",
+                    "c:/Users/massi/Documents/PlatformIO/Projects/ESIT-WeatherStation/.pio/libdeps/esp32dev/Adafruit Unified Sensor",
                     "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/massi/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
