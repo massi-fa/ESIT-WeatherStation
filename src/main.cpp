@@ -1,10 +1,11 @@
 #include <Arduino.h>
 #include <DHT.h>
+#include "wifi32.h"
 
 #define DHTPIN 4   // Pin a cui è connesso il sensore
 #define DHTTYPE DHT11   // Tipo di sensore che stiamo utilizzando (DHT22)
 #define REFRESH 2000 // Intervallo di tempo tra un refresh e l'altro
-#define LIGHT_SENSOR_PIN 2 // ESP32 pin GIOP36 (ADC0)
+#define LIGHT_SENSOR_PIN 32 // ESP32 pin GIOP36 (ADC0)
 DHT dht(DHTPIN, DHTTYPE); // Parametri: pin a cui è connesso il sensore, tipo di dht 11/22
 
 //Variabili
@@ -15,9 +16,11 @@ int light;
 void setup() {
   Serial.begin(115200);
   dht.begin();
+  connect::setup();
 }
 
 void loop() {
+  connect::loop();
   myTime = millis();
 
   if (myTime%REFRESH == 0) { //Se il tempo passato dall'inizio dell'esecuzione del programma è multiplo di REFRESH
