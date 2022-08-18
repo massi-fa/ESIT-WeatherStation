@@ -1,7 +1,7 @@
 #include "wifi32.h"
 
-const char* ssid = SECRET_SSID;
-const char* password = SECRET_PASS;
+const char* ssid = STASSID;
+const char* password = STAPSK;
 
 String hostname = "ESP32-Sensors";
 

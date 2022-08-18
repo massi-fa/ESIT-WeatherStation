@@ -6,7 +6,7 @@
 
 #define DHTPIN 4   // Pin a cui è connesso il sensore
 #define DHTTYPE DHT11   // Tipo di sensore che stiamo utilizzando (DHT22)
-#define REFRESH 2000 // Intervallo di tempo tra un refresh e l'altro
+#define REFRESH 5000 // Intervallo di tempo tra un refresh e l'altro
 #define LIGHT_SENSOR_PIN 32 // ESP32 pin GIOP36 (ADC0)
 DHT dht(DHTPIN, DHTTYPE); // Parametri: pin a cui è connesso il sensore, tipo di dht 11/22
 
@@ -20,7 +20,7 @@ void setup() {
   connect::setup();
   awsMqtt::setup();
   dht.begin();
-  connect::setup();
+  //connect::setup();
 }
 
 void loop() {

@@ -1,6 +1,7 @@
 #include <pgmspace.h>
 
-#define SECRET
+#define SECRET 
 
-static const  char SECRET_SSID[] PROGMEM = "Your SSID";
-static const  char SECRET_PASS[] PROGMEM = "Your Password";
+
+#define STASSID "H369Q_8B8E_2.4G"
+#define STAPSK  "s4f7H5ES"

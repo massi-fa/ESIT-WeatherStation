@@ -4,8 +4,8 @@
 #include <ArduinoJson.h>
 #include <iostream>
 #include <string>
-#define AWS_IOT_PUBLISH_TOPIC   "$aws/things/ESP32/shadow/update" 
-#define AWS_IOT_SUBSCRIBE_TOPIC "$aws/things/ESP32/shadow/update" 
+#define AWS_IOT_PUBLISH_TOPIC   "$aws/things/ESP32_Meteo/shadow/update" 
+#define AWS_IOT_SUBSCRIBE_TOPIC "$aws/things/ESP32_Meteo/shadow/update" 
 
 namespace awsMqtt{
     void setup();
