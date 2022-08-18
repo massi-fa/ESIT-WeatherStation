@@ -44,3 +44,6 @@
 .pio/build/project.checksum
 .pio/build/esp32dev/idedata.json
 lib/awsmqtt/secrets copy.h
+lib/wifi/secrets.h
+lib/awsmqtt/secrets.h
+lib/awsmqtt/mqtt.h
