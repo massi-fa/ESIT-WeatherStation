@@ -22,6 +22,7 @@ namespace connect{
       Serial.print('.');
       delay(1000);
     }
+    Serial.println(WiFi.macAddress()); // Stampa Mac Adress per conoscere l'identificativo dell'esp
     Serial.println(WiFi.localIP());
     
   }

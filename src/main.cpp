@@ -1,8 +1,8 @@
 #include "wifi32.h"
-#include "mqtt.h"
 #include <Arduino.h>
 #include <DHT.h>
 #include "wifi32.h"
+#include "bluetooth.h"
 
 #define DHTPIN 4   // Pin a cui è connesso il sensore
 #define DHTTYPE DHT11   // Tipo di sensore che stiamo utilizzando (DHT22)
@@ -18,15 +18,13 @@ int light;
 void setup() {
   Serial.begin(115200);
   connect::setup();
-  awsMqtt::setup();
+  bluetooh::setup();
   dht.begin();
-  connect::setup();
+
 }
 
 void loop() {
   connect::loop();
-  awsMqtt::loop();
-
   myTime = millis();
 
   if (myTime%REFRESH == 0) { //Se il tempo passato dall'inizio dell'esecuzione del programma è multiplo di REFRESH
@@ -42,7 +40,5 @@ void loop() {
     Serial.print(" %\t");
     Serial.print("Luminosità: ");
     Serial.println(light);
-    awsMqtt::publishMessage(temp, hum, light);
   }
-
 }
