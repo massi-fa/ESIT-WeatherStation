@@ -1,8 +1,7 @@
-#include "wifi32.h"
 #include <Arduino.h>
 #include <DHT.h>
-#include "wifi32.h"
 #include "bluetooth.h"
+#include "wifi32.h"
 
 #define DHTPIN 4   // Pin a cui è connesso il sensore
 #define DHTTYPE DHT11   // Tipo di sensore che stiamo utilizzando (DHT22)
@@ -20,7 +19,6 @@ void setup() {
   connect::setup();
   bluetooh::setup();
   dht.begin();
-
 }
 
 void loop() {
