@@ -25,6 +25,7 @@ void setup() {
 
 void loop() {
   connect::loop();
+  bluetooh::loop();
   myTime = millis();
 
   if (myTime%REFRESH == 0) { //Se il tempo passato dall'inizio dell'esecuzione del programma è multiplo di REFRESH
