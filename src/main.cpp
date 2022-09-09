@@ -3,16 +3,16 @@
 #include "bluetooth.h"
 #include "wifi32.h"
 
-#define DHTPIN 4   // Pin a cui è connesso il sensore
-#define DHTTYPE DHT11   // Tipo di sensore che stiamo utilizzando (DHT22)
-#define REFRESH 2000 // Intervallo di tempo tra un refresh e l'altro
-#define LIGHT_SENSOR_PIN 32 // ESP32 pin GIOP36 (ADC0)
-DHT dht(DHTPIN, DHTTYPE); // Parametri: pin a cui è connesso il sensore, tipo di dht 11/22
+#define DHTPIN 4   
+#define DHTTYPE DHT11   
+#define REFRESH 2000 
+#define LIGHT_SENSOR_PIN 32 
+DHT dht(DHTPIN, DHTTYPE);
 
 //Variabili
-unsigned long myTime; //Variabile per salvare il tempo passato dall'inizio dell'esecuzione del programma
-float hum;  //Variabile in cui verrà inserita la % di umidità
-float temp; //Variabile in cui verrà inserita la temperatura
+unsigned long myTime; 
+float hum;
+float temp; 
 int light;
 void setup() {
   Serial.begin(115200);
@@ -26,9 +26,9 @@ void loop() {
   bluetooh::loop();
   myTime = millis();
 
-  if (myTime%REFRESH == 0) { //Se il tempo passato dall'inizio dell'esecuzione del programma è multiplo di REFRESH
-    hum = dht.readHumidity(); //Leggo l'umidità
-    temp = dht.readTemperature(); //Leggo la temperatura
+  if (myTime%REFRESH == 0) {
+    hum = dht.readHumidity();
+    temp = dht.readTemperature();
     light = analogRead(LIGHT_SENSOR_PIN);
     Serial.print("Umidità: ");
     Serial.print(hum);
